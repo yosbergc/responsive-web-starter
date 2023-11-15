@@ -8,7 +8,11 @@ const h2title = document.querySelector('.h2-title');
 const h5title = document.querySelector('.h5-title');
 const logo = document.querySelector('.logo');
 const currentPage = document.querySelector('.firstOne');
+const darkModeIconMobile = document.getElementById('dark-mode-mobile');
+const lightModeMobile = document.getElementById('light-mode-mobile');
 
+darkModeIconMobile.addEventListener('click', activateDarkMode);
+lightModeMobile.addEventListener('click', activateLightMode);
 darkModeIcon.addEventListener('click', activateDarkMode);
 lightModeIcon.addEventListener('click', activateLightMode);
 menuIcon.addEventListener('click', toggleMenu);

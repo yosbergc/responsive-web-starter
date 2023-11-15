@@ -20,13 +20,18 @@ header {
     padding: 20px;
 }
 .changeCustomization {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: #223344;
     border-radius: 20px;
     padding: 5px 5px;
     cursor: pointer;
+}
+.mobileCustomUI {
+    width: 70px;
+    margin: 0 auto;
+    display: flex;
 }
 .dark-mode {
     width: 25px;
@@ -156,6 +161,9 @@ header {
     }
 }
 @media (min-width: 768px) {
+    .changeCustomization {
+        display: flex;
+    }
     .table-desktop-menu {
         display: inline;
     }
