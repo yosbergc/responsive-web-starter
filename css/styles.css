@@ -31,12 +31,17 @@ header {
 .dark-mode {
     width: 25px;
     height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.active-ui {
+    background-color: white;
+    border-radius: 50px;
 }
 .light-mode {
     width: 25px;
     height: 25px;
-    background-color: white;
-    border-radius: 50px;
+    margin-right: 5px;
 }
 .hero-section-container {
     margin-top: 50px;
@@ -49,13 +54,13 @@ header {
     width: 80%;
     margin-left: 40px;
 }
-.hero-section-info-container h5 {
+.h5-title {
     font-size: 14px;
     color: #223344;
 }
-.hero-section-info-container h2 {
+.h2-title {
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 45px;
     color: #223344;
     line-height: 80px;
 }
@@ -136,6 +141,12 @@ header {
 .closed {
     display: none;
 }
+.dark-mode-text-white {
+    color: white;
+}
+.dark-mode-background {
+    background-color: #111729;
+}
 @media (min-width: 640px) {
     .secondary-cta-hero-section {
         display: inline;
@@ -157,9 +168,15 @@ header {
     }
     .table-desktop-menu li {
         margin-left: 40px;
-        font-weight: 600;
+        font-weight: 500;
         color: #677289;
         font-size: 16px;
+    }
+    .table-desktop-menu .firstOne {
+        color: #111729;
+    }
+    .dark-mode-currentPage {
+        color: white !important;
     }
 }
 @media (min-width: 1024px) {
